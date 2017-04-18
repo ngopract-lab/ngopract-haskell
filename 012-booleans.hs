@@ -12,3 +12,9 @@ biggerThanFive x =
 
 notSomething :: Bool -> IO ()
 notSomething b = print(not b) --prints a negation of b
+
+andTrue :: Bool -> IO ()
+andTrue b = print(b && True)
+
+orTrue :: Bool -> IO ()
+orTrue b = print(b || True)
