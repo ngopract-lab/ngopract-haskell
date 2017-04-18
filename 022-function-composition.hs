@@ -10,4 +10,7 @@ sumListOfNumber numList = sum numList
 
 -- composedSumNegation is a function which composed from negateNumber and sumListOfNumber
 -- to "join" these functions, use "." (dot) notation
+-- don't forget to use parentheses "( )" to group them,
 composedSumNegation numList = (negateNumber . sumListOfNumber) numList
+-- alternative form/syntax using $ dollar sign
+composedSumNegation2 numList = negateNumber . sumListOfNumber $ numList
