@@ -40,10 +40,10 @@ splittedNumberList = splitAt 5 numberList -- ([1,2,3,4,5],[6,7,8,9,10])
 
 -- 10. TakeWhile: Takes while the value of the List is <a condition>
 -- Please note that it will stop if the condition is not met.
-takenWhileStillBelowFive = takeWhile (<5) numberList
+takenWhileStillBelowFive = takeWhile (<5) numberList -- [1,2,3,4]
 
 -- 11. DropWhile: just like TakeWhile, but Drop it.
 -- Please note that it will stop if the condition is not met.
-droppedWhileBelowFive = dropWhile (<5) numberList
+droppedWhileBelowFive = dropWhile (<5) numberList -- [5,6,7,8,9,10]
 
 -- TODO find out about pattern matching on Lists. (read book on page 294)
