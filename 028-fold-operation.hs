@@ -1,5 +1,7 @@
 -- fold is an operation which returns a single value from the List
 -- please note that in folding, we need a "placeholder" value
+-- foldr => reducing List from right
+-- foldl => reducing List from left
 myList = [1, 5, 10]
 
 -- 01. Reducing the list to a single number by addition
@@ -8,3 +10,6 @@ foldedSum = foldr (+) 0 myList -- 16 => 0 + 10 = 10, 10 + 5 = 15, 15 + 1 = 16
 
 -- 02. Reducing the list to a single number my multiplication
 foldedMult = foldr (*) 1 myList -- 50 => 1 * 10 = 10, 10 * 5 = 50, 50 * 1 = 50
+
+-- 03. Reducing the list from Left
+foldedMultFromLeft = foldl (*) 1 myList -- 50 => 1 * 1 = 1, 1 * 5 = 5, 5 * 10 = 50
